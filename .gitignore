@@ -5,6 +5,8 @@ node_modules/
 dist/
 github-upload-ready/
 github-upload-ready.zip
+github-release-*/
+github-release-*.zip
 
 # Tauri / Rust build output
 src-tauri/target/
