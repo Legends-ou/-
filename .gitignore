@@ -3,14 +3,16 @@ node_modules/
 
 # Frontend build output
 dist/
-github-upload-ready/
-github-upload-ready.zip
-github-release-*/
-github-release-*.zip
 
 # Tauri / Rust build output
 src-tauri/target/
 src-tauri/gen/
+
+# Local release assets and upload bundles
+github-release-*/
+github-release-*.zip
+github-upload-ready/
+github-upload-ready.zip
 
 # Local env and secrets
 .env
@@ -20,6 +22,8 @@ src-tauri/gen/
 *.pfx
 *.pem
 *.key
+updater.key
+updater.key.pub
 
 # Logs
 *.log

@@ -10,6 +10,7 @@
 - AI 主题命名：识别图片内容，用四个字概括主题并生成新文件名。
 - 两套功能独立：规律命名和 AI 命名互不干扰。
 - 实时预览：识别或规则生成后，列表中立即显示新文件名。
+- 列表移除：选错图片后可以移除单张或批量移除选中项，不删除原文件。
 - 选择性处理：支持全部图片、选中图片、失败图片重新识别。
 - 停止识别：AI 识别过程中可以随时停止。
 - 安全重命名：目标重名时自动避让，支持撤销最近一次重命名。
@@ -40,7 +41,7 @@
 
 Web 预览只适合看界面。本机文件选择、图片重命名等功能需要 Tauri 桌面窗口。
 
-```powershell
+```ps1
 npm.cmd install
 npm.cmd run web
 ```
@@ -97,9 +98,9 @@ src-tauri\target\release\bundle\nsis\
 
 也可以推送 Git tag 触发 GitHub Actions 自动发布：
 
-```powershell
-git tag v0.2.0
-git push origin v0.2.0
+```ps1
+git tag v0.2.2
+git push origin v0.2.2
 ```
 
 更多发布说明见 [docs/PUBLISHING.md](docs/PUBLISHING.md)。
