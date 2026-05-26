@@ -40,7 +40,7 @@
 
 Web 预览只适合看界面。本机文件选择、图片重命名等功能需要 Tauri 桌面窗口。
 
-```ps1
+```powershell
 npm.cmd install
 npm.cmd run web
 ```
@@ -97,7 +97,7 @@ src-tauri\target\release\bundle\nsis\
 
 也可以推送 Git tag 触发 GitHub Actions 自动发布：
 
-```ps1
+```powershell
 git tag v0.2.0
 git push origin v0.2.0
 ```
